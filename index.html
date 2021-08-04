@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="component.css">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="checkbox" id="side-checkbox">
+  <label for="side-checkbox" class="menu-button">
+    <i class="fa fa-bars fa-2x"></i>
+  </label>
+  <menu class="side-bar">
+    <ul class="side-bar__menu">
+      <li class="side-bar__item">Menu1</li>
+      <li class="side-bar__item">Menu2</li>
+      <li class="side-bar__item">Menu3</li>
+      <li class="side-bar__item">Menu4</li>
+      <li class="side-bar__item">Menu5</li>
+    </ul>
+  </menu>
+
+  <div class="main-body">
+    <div class="container">
+      <header class="header">
+        <h1 class="header__heading">
+          Web site
+        </h1>
+      </header>
+
+      <main class="main-container">
+        <div class="tab-container">
+          <input type="radio" name="tab__radio" id="tab__radio--1" class="tab__radio" checked>
+          <label for="tab__radio--1" class="tab__label">ラベル1</label>
+          <div class="tab__box">
+            タブ１が選択された時
+          </div>
+          <input type="radio" name="tab__radio" id="tab__radio--2">
+          <label for="tab__radio--2" class="tab__label">ラベル2</label>
+          <div class="tab__box">
+            タブ２が選択された時
+          </div>
+          <input type="radio" name="tab__radio" id="tab__radio--3">
+          <label for="tab__radio--3" class="tab__label">ラベル3</label>
+          <div class="tab__box">
+            タブ３が選択された時
+          </div>
+        </div> <!-- tab-container -->
+      </main>
+      <footer class="footer">
+        footer
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>

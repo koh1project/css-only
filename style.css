@@ -1,0 +1,156 @@
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #2d2d2d;
+
+  --color-side: #30336b;
+  --color-white: #fff;
+
+  --color-border-red: #dc2929;
+  --color-shadow: rgba(68, 67, 67, 0.897);
+
+  --color-tab-selected: #dc2929a4;
+  --color-tab-unselected: #5f29dc83;
+
+  --width-side-menu: 10rem;
+
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+
+body {
+  font-size: 1.6rem;
+  margin: 0 auto;
+}
+
+#side-checkbox {
+  display: none;
+}
+
+.side-bar {
+  transition: transform .3s;
+  transform: translateX(calc(-1 * var(--width-side-menu)));
+  background-color: var(--color-side);
+}
+
+.main-body {
+  transition: transform .3s;
+}
+
+#side-checkbox:checked~.side-bar {
+  transform: translate(0);
+}
+
+#side-checkbox:checked~.main-body,
+#side-checkbox:checked~.menu-button {
+  transform: translateX(var(--width-side-menu));
+}
+
+.container {
+  min-width: 50rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.menu-button {
+  height: 3rem;
+  width: 3rem;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  position: absolute;
+  top: .3rem;
+  left: 1rem;
+  z-index: 101;
+  color: var(--color-white);
+}
+
+.side-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  height: 100vh;
+  width: var(--width-side-menu);
+}
+
+.side-bar__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.side-bar__item {
+  padding: 1rem;
+}
+
+.main-container {
+  margin: 0 auto;
+}
+
+.tab-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label.tab__label {
+  height: 3rem;
+  max-width: 20rem;
+  width: 15vw;
+
+  border: .5px solid black;
+  border-bottom: .5px solid white;
+  padding-bottom: 1px;
+
+  transform: translateY(1px);
+  z-index: 10;
+}
+
+label.tab__label:not(:first-of-type) {
+  border-left: none;
+}
+
+.tab__box {
+  border: 1px solid grey;
+  display: none;
+}
+
+input[name="tab__radio"]+label {
+  background-color: var(--color-tab-unselected);
+}
+
+input[name="tab__radio"]:checked+label {
+  background-color: var(--color-tab-selected);
+}
+
+input[name="tab__radio"]:checked+label+.tab__box {
+  display: block;
+  width: 100%;
+  order: 1;
+  align-self: stretch;
+  min-height: 40rem;
+}
+
+.tab__label {
+  order: 0;
+}

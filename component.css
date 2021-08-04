@@ -1,0 +1,26 @@
+.header {
+  height: 5rem;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.footer {
+  height: 3rem;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
