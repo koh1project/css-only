@@ -2,6 +2,8 @@ html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -26,6 +28,13 @@ html {
   box-sizing: inherit;
 }
 
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: currentColor;
+}
+
 @keyframes fadeId {
   from {
     opacity: 0;
@@ -39,6 +48,7 @@ html {
 body {
   font-size: 1.6rem;
   margin: 0 auto;
+
 
   /* animation: .5s fadeId 1s backwards; */
   /* animation-delay: .2s; */
@@ -166,4 +176,10 @@ input[name="tab__radio"]:checked+label+.tab__box {
   align-self: stretch;
   min-height: 40rem;
   background-color: var(--color-tab-selected);
+}
+
+
+section:not(:first-of-type) {
+  padding-top: 10rem;
+  height: 40vh;
 }
