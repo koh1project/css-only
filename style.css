@@ -35,15 +35,7 @@ a:visited {
   color: currentColor;
 }
 
-@keyframes fadeId {
-  from {
-    opacity: 0;
-  }
 
-  to {
-    opacity: 1;
-  }
-}
 
 body {
   font-size: 1.6rem;
@@ -181,6 +173,15 @@ input[name="tab__radio"]:checked+label+.tab__box {
   align-self: stretch;
   min-height: 40rem;
   background-color: var(--color-tab-selected);
+}
+
+#tab__radio--2:checked+.tab__label+.tab__box {
+  overflow: hidden;
+}
+
+#tab__radio--3:checked+.tab__label+.tab__box .tab__text {
+  color: var(--color-white);
+  animation: 2s moveIn ease-in backwards;
 }
 
 

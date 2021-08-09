@@ -1,0 +1,74 @@
+@keyframes fadeId {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes moveIn {
+  0% {
+    transform: translateX(-200%) scale(1) rotate(10deg);
+  }
+
+  30% {
+    transform: translateX(-10%) scale(0.98) rotate(10deg);
+  }
+
+  50% {
+    transform: translateX(1%) scale(1) rotate(10deg);
+  }
+
+  60% {
+    transform: translateX(-1%) scale(1.01) rotate(9deg);
+  }
+
+  65% {
+    transform: translateX(-1%) scale(1.01) rotate(6deg);
+  }
+
+  70% {
+    transform: translateX(-1%) scale(1.01) rotate(8deg);
+  }
+
+  80% {
+    transform: translateX(-1%) scale(1.01) rotate(10deg);
+  }
+
+  100% {
+    transform: translateX(0%) scale(1) rotate(0deg);
+  }
+}
+
+
+
+/* Tab 2 WALL */
+@keyframes move {
+  0% {
+    transform: translateZ(-500px) rotate(0deg);
+  }
+
+  100% {
+    transform: translateZ(500px) rotate(0deg);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

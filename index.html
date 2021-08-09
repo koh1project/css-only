@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="component.css">
+  <link rel="stylesheet" href="animation.css">
   <link rel="stylesheet" href="style.css">
 
   <title>Document</title>
@@ -38,12 +39,22 @@
           <input type="radio" name="tab__radio" id="tab__radio--2">
           <label for="tab__radio--2" class="tab__label">ラベル2</label>
           <div class="tab__box">
-            タブ２が選択された時
+            <div class="scene">
+              <div class="wrap">
+                <div class="wall wall-right"></div>
+                <div class="wall wall-left"></div>
+                <div class="wall wall-top"></div>
+                <div class="wall wall-bottom"></div>
+                <div class="wall wall-back"></div>
+              </div>
+            </div>
           </div>
           <input type="radio" name="tab__radio" id="tab__radio--3">
           <label for="tab__radio--3" class="tab__label">ラベル3</label>
           <div class="tab__box">
-            タブ３が選択された時
+            <p class="tab__text">
+              タブ３が選択された時
+            </p>
           </div>
         </section> <!-- tab-container -->
         <section id="section2">Section1</section>
