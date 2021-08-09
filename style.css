@@ -179,7 +179,14 @@ input[name="tab__radio"]:checked+label+.tab__box {
   overflow: hidden;
 }
 
+#tab__radio--3:checked+.tab__label+.tab__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #tab__radio--3:checked+.tab__label+.tab__box .tab__text {
+  font-size: 3rem;
   color: var(--color-white);
   animation: 2s moveIn ease-in backwards;
 }
