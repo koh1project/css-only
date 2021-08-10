@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="component.css">
   <link rel="stylesheet" href="animation.css">
@@ -21,69 +20,78 @@
     <i class="fa fa-bars fa-2x"></i>
   </label>
 
+  <div class="container">
 
-  <div class="main-body">
-    <div class="container">
-      <header class="header">
-        <h1 class="header__heading">
-          Web site
-        </h1>
-      </header>
+    <header class="header">
+      <h1 class="header__heading">
+        Web site
+      </h1>
+    </header>
 
-      <main class="main-container">
-        <section class="tab-container" id="section1">
-          <input type="radio" name="tab__radio" id="tab__radio--1" class="tab__radio" checked>
-          <label for="tab__radio--1" class="tab__label">ラベル1</label>
-          <div class="tab__box">
-            タブ１が選択された時
+    <section class="tab-container" id="section1">
+      <input type="radio" name="tab__radio" id="tab__radio--1" class="tab__radio" checked>
+      <label for="tab__radio--1" class="tab__label">ラベル1</label>
+      <div class="tab__box">
+        タブ１が選択された時
+      </div>
+      <input type="radio" name="tab__radio" id="tab__radio--2">
+      <label for="tab__radio--2" class="tab__label">ラベル2</label>
+      <div class="tab__box">
+        <div class="scene">
+          <div class="wrap">
+            <div class="wall wall-right"></div>
+            <div class="wall wall-left"></div>
+            <div class="wall wall-top"></div>
+            <div class="wall wall-bottom"></div>
+            <div class="wall wall-back"></div>
           </div>
-          <input type="radio" name="tab__radio" id="tab__radio--2">
-          <label for="tab__radio--2" class="tab__label">ラベル2</label>
-          <div class="tab__box">
-            <div class="scene">
-              <div class="wrap">
-                <div class="wall wall-right"></div>
-                <div class="wall wall-left"></div>
-                <div class="wall wall-top"></div>
-                <div class="wall wall-bottom"></div>
-                <div class="wall wall-back"></div>
-              </div>
-            </div>
-          </div>
-          <input type="radio" name="tab__radio" id="tab__radio--3">
-          <label for="tab__radio--3" class="tab__label">ラベル3</label>
-          <div class="tab__box">
-            <p class="tab__text">
-              タブ３が選択された時
-            </p>
-          </div>
-        </section> <!-- tab-container -->
-        <section id="section2">
-          <div class="card">
-            <div class="card__side card__side--front">カード表</div>
-            <div class="card__side card__side--back">カード裏</div>
-          </div>
-        </section>
-        <section id="section3">Section3</section>
-        <section id="section4">Section4</section>
-        <section id="section5">Section5</section>
-        <section id="section6">Section6</section>
-      </main>
+        </div>
+      </div>
+      <input type="radio" name="tab__radio" id="tab__radio--3">
+      <label for="tab__radio--3" class="tab__label">ラベル3</label>
+      <div class="tab__box">
+        <p class="tab__text">
+          タブ３が選択された時
+        </p>
+      </div>
+    </section> <!-- tab-container -->
 
-      <footer class="footer">
-        footer
-      </footer>
-    </div>
+    <section id="section2">
+      <div class="card">
+        <div class="card__side card__side--front">カード表</div>
+        <div class="card__side card__side--back">カード裏</div>
+      </div>
+    </section>
+
+    <section id="section3">Modal Box</section>
+    <section id="section4">Input box</section>
+    <section id="section5">Popup</section>
+    <section id="section6">Timer</section>
+
+    <menu class="side-bar">
+      <ul class="side-bar__menu">
+        <li class="side-bar__item"><a href="#section1">タブ</a></li>
+        <li class="side-bar__item"><a href="#section2">カード</a></li>
+        <li class="side-bar__item"><a href="#section3">モーダル</a></li>
+        <li class="side-bar__item"><a href="#section4">Input </a></li>
+        <li class="side-bar__item"><a href="#section5">ポップアップ</a></li>
+        <li class="side-bar__item"><a href="#section6">Timer</a></li>
+      </ul>
+    </menu>
+
+
+    <footer class="footer">
+      footer
+    </footer>
   </div>
-  <menu class="side-bar">
-    <ul class="side-bar__menu">
-      <li class="side-bar__item"><a href="#section1">Menu1</a></li>
-      <li class="side-bar__item"><a href="#section2">Menu2</a></li>
-      <li class="side-bar__item"><a href="#section3">Menu3</a></li>
-      <li class="side-bar__item"><a href="#section4">Menu4</a></li>
-      <li class="side-bar__item"><a href="#section5">Menu5</a></li>
-    </ul>
-  </menu>
+
+
+
+
+  <div class="popup" id="popup">
+    <div class="popup__content">Popup Content</div>
+  </div>
+
 </body>
 
 </html>
