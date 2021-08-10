@@ -18,6 +18,9 @@ html {
   --color-tab-selected: #dc2929a4;
   --color-tab-unselected: #5f29dc83;
 
+  --color-card-front: #dc2929c9;
+  --color-card-back: #562db483;
+
   --width-side-menu: 10rem;
 }
 
@@ -193,6 +196,7 @@ input[name="tab__radio"]:checked+label+.tab__box {
 
 
 section:not(:first-of-type) {
-  padding-top: 10rem;
+  padding-top: 20rem;
   height: 40vh;
+  padding-bottom: 20rem;
 }
