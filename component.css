@@ -127,3 +127,8 @@
 .card:hover .card__side--back {
   transform: rotateY(0deg);
 }
+.card:hover .card__side--back:active {
+  transform: scale(0.98) translateY(3%);
+  box-shadow: 0rem 1rem 3rem rgba(0, 0, 0, 0.349);
+
+}
