@@ -226,7 +226,7 @@ section:not(:first-of-type) {
   color: var(--color-side);
 }
 
-#section5:target~.side-bar .side-bar__item:nth-of-type(51) {
+#section5:target~.side-bar .side-bar__item:nth-of-type(5) {
   background-color: var(--color-white);
   color: var(--color-side);
 }
@@ -360,4 +360,22 @@ label[class$="-form__label"] {
 
 .form__input:focus:invalid {
   border-bottom: 3px solid var(--color-invalid-form);
+}
+
+
+.popup {
+  width: 30rem;
+  line-height: 2;
+  height: 30rem;
+  padding: 5rem;
+  border: 2px solid black;
+  border-radius: 3rem;
+
+  position: fixed;
+  top: 50%;
+  right: -16%;
+}
+
+#section5:target .popup {
+  animation: popup 6s ease-out 1s;
 }
