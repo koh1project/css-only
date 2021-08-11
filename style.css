@@ -30,6 +30,31 @@ html {
   --height-header: 6rem;
 }
 
+
+#switch:checked~.container {
+  --color-primary: 2d2d2d;
+
+  --color-side: #2d2d2d;
+  --color-white: #fff;
+
+  --color-border-red: #dc2929;
+  --color-shadow: rgba(44, 42, 42, 0.979);
+
+  --color-modal-btn: rgba(68, 67, 67, 0.897);
+
+  --color-tab-selected: #dc2929a4;
+  --color-tab-unselected: #5f29dc83;
+
+  --color-card-front: #dc2929c9;
+  --color-card-back: #562db483;
+
+  --color-valid-form: green;
+  --color-invalid-form: red;
+}
+
+
+
+
 *,
 *::before,
 *::after {
