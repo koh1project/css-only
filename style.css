@@ -23,6 +23,9 @@ html {
   --color-card-front: #dc2929c9;
   --color-card-back: #562db483;
 
+  --color-valid-form: green;
+  --color-invalid-form: red;
+
   --width-side-menu: 12rem;
   --height-header: 6rem;
 }
@@ -335,6 +338,26 @@ section:not(:first-of-type) {
 }
 
 .form__submit {
+  margin-top: 2rem;
+  padding: .5rem;
   border: solid 1px grey;
   border-radius: 5rem;
+}
+
+label[class$="-form__label"] {
+  color: grey;
+  margin-top: 1rem;
+  margin-left: 1.2rem;
+
+  transition: all .3s;
+}
+
+.form__input:placeholder-shown+label[class$="-form__label"] {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+
+.form__input:focus:invalid {
+  border-bottom: 3px solid var(--color-invalid-form);
 }
