@@ -1,10 +1,12 @@
 @keyframes fadeId {
-  from {
+  50% {
     opacity: 0;
+    visibility: hidden;
   }
 
-  to {
+  100% {
     opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -240,6 +242,7 @@
 
   100% {
     opacity: 1;
+
     --color-primary: #db831ee7;
 
     --color-side: #df5900;

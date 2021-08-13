@@ -6,7 +6,9 @@ html {
 }
 
 body {
-  animation: fadeId 1s ease-in;
+  opacity: 0;
+  visibility: hidden;
+  animation: fadeId 1s ease-in forwards;
 }
 
 :root {
@@ -17,12 +19,12 @@ body {
 }
 
 .container {
-  animation: color-toggle-to-light 1s ease-in forwards;
+  animation: color-toggle-to-light .7s ease-in forwards;
 
 }
 
 #switch:checked~.container {
-  animation: color-toggle-to-dark 1s ease-in forwards;
+  animation: color-toggle-to-dark .7s ease-in forwards;
 }
 
 *,
