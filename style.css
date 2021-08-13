@@ -2,58 +2,28 @@ html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-
   scroll-behavior: smooth;
 }
 
+body {
+  animation: fadeId 1s ease-in;
+}
+
 :root {
-  --color-primary: #2d2d2d;
-
-  --color-side: #2d2d2d;
   --color-white: #fff;
-
-  --color-border-red: #dc2929;
-  --color-shadow: rgba(44, 42, 42, 0.979);
-
-  --color-modal-btn: rgba(68, 67, 67, 0.897);
-
-  --color-tab-selected: #dc2929a4;
-  --color-tab-unselected: #5f29dc83;
-
-  --color-card-front: #dc2929c9;
-  --color-card-back: #562db483;
-
-  --color-valid-form: green;
-  --color-invalid-form: red;
-
+  --color-toggle-checked: rgba(0, 0, 0, 0);
   --width-side-menu: 12rem;
   --height-header: 6rem;
 }
 
+.container {
+  animation: color-toggle-to-light 1s ease-in forwards;
 
-#switch:checked~.container {
-  --color-primary: 2d2d2d;
-
-  --color-side: #2d2d2d;
-  --color-white: #fff;
-
-  --color-border-red: #dc2929;
-  --color-shadow: rgba(44, 42, 42, 0.979);
-
-  --color-modal-btn: rgba(68, 67, 67, 0.897);
-
-  --color-tab-selected: #dc2929a4;
-  --color-tab-unselected: #5f29dc83;
-
-  --color-card-front: #dc2929c9;
-  --color-card-back: #562db483;
-
-  --color-valid-form: green;
-  --color-invalid-form: red;
 }
 
-
-
+#switch:checked~.container {
+  animation: color-toggle-to-dark 1s ease-in forwards;
+}
 
 *,
 *::before,
@@ -94,6 +64,7 @@ body {
   transform: translateX(calc(-1 * var(--width-side-menu)));
   background-color: var(--color-side);
   color: var(--color-white);
+  z-index: 100;
 }
 
 
@@ -119,10 +90,8 @@ body {
 .menu-button {
   height: 3rem;
   width: 3rem;
-  background-color: rgba(0, 0, 0, 0.3);
-
   position: fixed;
-  top: .3rem;
+  top: .7rem;
   left: 1rem;
   z-index: 11;
   color: var(--color-white);
@@ -153,7 +122,7 @@ body {
 }
 
 .side-bar__item:hover {
-  color: black;
+  color: var(--color-black);
   background-color: var(--color-white);
 }
 
@@ -165,6 +134,7 @@ body {
   align-content: flex-start;
   flex-wrap: wrap;
   padding-top: 10rem;
+  color: var(--color-text);
 }
 
 input[type="radio"] {
@@ -270,7 +240,7 @@ section:not(:first-of-type) {
   justify-content: center;
   align-items: center;
 
-  background-color: rgba(68, 67, 67, 0.897);
+  background-color: var(--color-modal-btn);
   color: var(--color-white);
   border-radius: 3px;
   box-shadow:
@@ -314,7 +284,7 @@ section:not(:first-of-type) {
   transform: translate(-50%, -50%);
   height: 50%;
   width: 70%;
-  background-color: #fff;
+  background-color: var(--color-white);
   visibility: hidden;
   opacity: 0;
 }
@@ -365,8 +335,10 @@ section:not(:first-of-type) {
 .form__submit {
   margin-top: 2rem;
   padding: .5rem;
-  border: solid 1px grey;
+  border: solid 1px var(--color-border-submit-btn);
   border-radius: 5rem;
+  color: var(--color-white);
+  background-color: var(--color-submit-btn);
 }
 
 label[class$="-form__label"] {

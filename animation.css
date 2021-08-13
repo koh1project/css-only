@@ -90,3 +90,181 @@
     transform: translateX(0%) translateZ(0);
   }
 }
+
+@keyframes color-toggle-to-dark {
+  0% {
+    --color-primary: #db831ee7;
+
+    --color-side: #df5900;
+    --color-white: #fff;
+    --color-black: black;
+
+    --color-border-red: #dc2929;
+    --color-shadow: rgba(44, 42, 42, 0.979);
+
+    --color-modal-btn: rgba(19, 230, 230, 0.897);
+
+    --color-tab-selected: #dc2929a4;
+    --color-tab-unselected: #5f29dc83;
+
+    --color-card-front: #d9dc29e3;
+    --color-card-back: #2db42dd0;
+
+    --color-valid-form: green;
+    --color-invalid-form: red;
+
+    --color-submit-btn: #29a9dc;
+    --color-border-submit-btn: #248db6;
+
+    --color-text: #000;
+    --color-switch-bg: rgba(0, 0, 0, .1);
+    --color-toggle-checked: #34323D;
+  }
+
+  50% {
+    opacity: 0;
+    --color-primary: rgba(0, 0, 0, 0);
+
+    --color-side: rgba(0, 0, 0, 0);
+    --color-white: rgba(0, 0, 0, 0);
+    --color-black: rgba(0, 0, 0, 0);
+
+    --color-border-red: rgba(0, 0, 0, 0);
+    --color-shadow: rgba(0, 0, 0, 0);
+
+    --color-modal-btn: rgba(0, 0, 0, 0);
+
+    --color-tab-selected: rgba(0, 0, 0, 0);
+    --color-tab-unselected: rgba(0, 0, 0, 0);
+
+    --color-card-front: rgba(0, 0, 0, 0);
+    --color-card-back: rgba(0, 0, 0, 0);
+
+    --color-valid-form: rgba(0, 0, 0, 0);
+    --color-invalid-form: rgba(0, 0, 0, 0);
+
+    --color-text: rgba(0, 0, 0, 0);
+    --color-switch-bg: rgba(0, 0, 0, 0);
+    --color-toggle-checked: rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    --color-primary: #2d2d2d;
+
+    --color-side: #464343;
+    --color-white: #fff;
+    --color-black: black;
+
+    --color-border-red: #dc2929;
+    --color-shadow: rgba(44, 42, 42, 0.979);
+
+    --color-modal-btn: rgba(68, 67, 67, 0.897);
+
+    --color-tab-selected: #7c0707d8;
+    --color-tab-unselected: #420d61cc;
+
+    --color-card-front: #dc2929c9;
+    --color-card-back: #562db483;
+
+    --color-valid-form: green;
+    --color-invalid-form: red;
+
+    --color-submit-btn: #1c1a9c;
+    --color-border-submit-btn: rgb(36, 141, 182);
+
+    --color-text: #fff;
+    --color-switch-bg: rgba(0, 0, 0, .1);
+    --color-toggle-checked: #34323D;
+  }
+}
+
+
+@keyframes color-toggle-to-light {
+  0% {
+    --color-primary: #2d2d2d;
+
+    --color-side: #2d2d2d;
+    --color-white: #fff;
+    --color-black: black;
+
+    --color-border-red: #dc2929;
+    --color-shadow: rgba(44, 42, 42, 0.979);
+
+    --color-modal-btn: rgba(68, 67, 67, 0.897);
+
+    --color-tab-selected: #dc2929a4;
+    --color-tab-unselected: #5f29dc83;
+
+    --color-card-front: #dc2929c9;
+    --color-card-back: #562db483;
+
+    --color-valid-form: green;
+    --color-invalid-form: red;
+
+    --color-submit-btn: #1c1a9c;
+    --color-border-submit-btn: rgb(36, 141, 182);
+
+    --color-text: #fff;
+
+    --color-switch-bg: rgba(0, 0, 0, .1);
+    --color-toggle-checked: #34323D;
+  }
+
+  50% {
+    opacity: 0;
+    --color-primary: rgba(0, 0, 0, 0);
+
+    --color-side: rgba(0, 0, 0, 0);
+    --color-white: rgba(0, 0, 0, 0);
+    --color-black: rgba(0, 0, 0, 0);
+
+    --color-border-red: rgba(0, 0, 0, 0);
+    --color-shadow: rgba(0, 0, 0, 0);
+
+    --color-modal-btn: rgba(0, 0, 0, 0);
+
+    --color-tab-selected: rgba(0, 0, 0, 0);
+    --color-tab-unselected: rgba(0, 0, 0, 0);
+
+    --color-card-front: rgba(0, 0, 0, 0);
+    --color-card-back: rgba(0, 0, 0, 0);
+
+    --color-valid-form: rgba(0, 0, 0, 0);
+    --color-invalid-form: rgba(0, 0, 0, 0);
+
+    --color-text: rgba(0, 0, 0, 0);
+    --color-switch-bg: rgba(0, 0, 0, 0);
+    --color-toggle-checked: rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    --color-primary: #db831ee7;
+
+    --color-side: #df5900;
+    --color-white: #fff;
+    --color-black: black;
+
+    --color-border-red: #dc2929;
+    --color-shadow: rgba(44, 42, 42, 0.979);
+
+    --color-modal-btn: rgba(19, 230, 230, 0.897);
+
+    --color-tab-selected: #dc2929a4;
+    --color-tab-unselected: #5f29dc83;
+
+    --color-card-front: #d9dc29e3;
+    --color-card-back: #2db42dd0;
+
+    --color-valid-form: green;
+    --color-invalid-form: red;
+
+
+    --color-submit-btn: #29a9dc;
+    --color-border-submit-btn: #248db6;
+    --color-text: #000;
+    --color-switch-bg: rgba(0, 0, 0, .1);
+    --color-toggle-checked: #34323D;
+  }
+}
