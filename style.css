@@ -14,6 +14,7 @@ body {
 :root {
   --color-white: #fff;
   --color-toggle-checked: rgba(0, 0, 0, 0);
+  --color-shadow-dark: rgba(0, 0, 0, 0.712);
   --width-side-menu: 12rem;
   --height-header: 6rem;
 }
@@ -233,6 +234,18 @@ section:not(:first-of-type) {
   color: var(--color-side);
 }
 
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+.modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .modal-btn {
   height: 10rem;
@@ -245,11 +258,22 @@ section:not(:first-of-type) {
   background-color: var(--color-modal-btn);
   color: var(--color-white);
   border-radius: 3px;
-  box-shadow:
-    inset 10px 10px 10px var(--color-shadow),
-    inset -10px -10px 10px var(--color-shadow),
-  ;
+  box-shadow: 1px 0 5px var(--color-shadow);
+  transition: transform .2s, box-shadow .1s;
 }
+
+.modal-btn:hover {
+  transform: translateY(-1%) scale(1.05);
+  box-shadow: 3px 0 10px var(--color-shadow);
+}
+
+.modal-btn:active {
+  transform: translateY(0%) scale(0.98);
+  box-shadow:
+    inset 5px 5px 10px var(--color-shadow),
+    inset -5px -5px 10px var(--color-shadow);
+}
+
 
 .modal-btn a {
   width: 100%;
@@ -341,6 +365,17 @@ section:not(:first-of-type) {
   border-radius: 5rem;
   color: var(--color-white);
   background-color: var(--color-submit-btn);
+  transition: .1s transform;
+}
+
+.form__submit:hover {
+  transform: scale(1.03);
+}
+
+.form__submit:active {
+  box-shadow:
+    inset 2px 2px 3px var(--color-shadow),
+    inset -2px -2px 3px var(--color-shadow);
 }
 
 label[class$="-form__label"] {
