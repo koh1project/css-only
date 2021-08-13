@@ -398,9 +398,9 @@ label[class$="-form__label"] {
 
   position: fixed;
   top: 50%;
-  right: -16%;
+  right: -40%;
 }
 
 #section5:target .popup {
-  animation: popup 6s ease-out 1s;
+  animation: popup 3s ease-out 1s;
 }

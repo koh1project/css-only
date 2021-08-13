@@ -137,13 +137,15 @@
   height: 3rem;
   width: 20rem;
 
-  position: relative;
+  position: absolute;
   display: block;
   outline: none;
+  top: 0%;
+  right: 10%;
 }
 
 
-label,
+.dark-light-switch,
 .toggle {
   height: 2.8rem;
   border-radius: 100px;
@@ -178,7 +180,7 @@ label,
   font-weight: bolder;
   width: 65%;
   margin-left: 17.5%;
-  margin-top: .5%;
+  margin-top: 3.5%;
   position: absolute;
   display: flex;
   justify-content: space-between;
