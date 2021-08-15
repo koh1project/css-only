@@ -13,6 +13,7 @@
   color: var(--color-white);
 }
 
+
 #switch:checked~.container .header__heading {
   visibility: hidden;
 }
@@ -25,6 +26,15 @@
   display: block;
   animation: fadeIn 2s ease-in forwards;
 }
+
+
+.header__heading--char {
+  display: inline-block;
+  animation: jumpChar 1s ease-in-out;
+
+}
+
+
 
 .footer {
   height: 3rem;
