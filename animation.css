@@ -121,6 +121,7 @@
     --color-text: #000;
     --color-switch-bg: rgba(0, 0, 0, .1);
     --color-toggle-checked: #34323D;
+    --color-tilt-box: #79e4e7;
   }
 
   50% {
@@ -148,6 +149,8 @@
     --color-text: rgba(0, 0, 0, 0);
     --color-switch-bg: rgba(0, 0, 0, 0);
     --color-toggle-checked: rgba(0, 0, 0, 0);
+
+    --color-tilt-box: rgba(0, 0, 0, 0);
   }
 
   100% {
@@ -178,6 +181,7 @@
     --color-text: #fff;
     --color-switch-bg: rgba(0, 0, 0, .1);
     --color-toggle-checked: #34323D;
+    --color-tilt-box: #04527b;
   }
 }
 
@@ -211,6 +215,7 @@
 
     --color-switch-bg: rgba(0, 0, 0, .1);
     --color-toggle-checked: #34323D;
+    --color-tilt-box: #04527b;
   }
 
   50% {
@@ -238,6 +243,7 @@
     --color-text: rgba(0, 0, 0, 0);
     --color-switch-bg: rgba(0, 0, 0, 0);
     --color-toggle-checked: rgba(0, 0, 0, 0);
+    --color-tilt-box: rgba(0, 0, 0, 0);
   }
 
   100% {
@@ -269,5 +275,6 @@
     --color-text: #000;
     --color-switch-bg: rgba(0, 0, 0, .1);
     --color-toggle-checked: #34323D;
+    --color-tilt-box: #79e4e7;
   }
 }
