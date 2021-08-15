@@ -13,6 +13,19 @@
   color: var(--color-white);
 }
 
+#switch:checked~.container .header__heading {
+  visibility: hidden;
+}
+
+#switch:checked~.container .header__heading::after {
+  /* visibility: visible; */
+  transform: translateY(-50%);
+  opacity: 0;
+  content: attr(data-text);
+  display: block;
+  animation: fadeIn 2s ease-in forwards;
+}
+
 .footer {
   height: 3rem;
   width: 100vw;

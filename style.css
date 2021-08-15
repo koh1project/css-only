@@ -8,7 +8,7 @@ html {
 body {
   opacity: 0;
   visibility: hidden;
-  animation: fadeId 1s ease-in forwards;
+  animation: fadeIn 1s ease-in forwards;
 }
 
 :root {
@@ -49,7 +49,7 @@ body {
   margin: 0 auto;
   position: relative;
 
-  /* animation: .5s fadeId 1s backwards; */
+  /* animation: .5s fadeIn 1s backwards; */
   /* animation-delay: .2s; */
 }
 

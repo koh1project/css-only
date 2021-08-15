@@ -1,4 +1,4 @@
-@keyframes fadeId {
+@keyframes fadeIn {
   50% {
     opacity: 0;
     visibility: hidden;
