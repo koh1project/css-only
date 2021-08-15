@@ -12,16 +12,12 @@ body {
 }
 
 :root {
-  --color-white: #fff;
+  /* --color-white: #fff; */
+  --color-white: rgb(255, 255, 255);
   --color-toggle-checked: rgba(0, 0, 0, 0);
   --color-shadow-dark: rgba(0, 0, 0, 0.712);
   --width-side-menu: 12rem;
   --height-header: 6rem;
-
-
-
-
-
 }
 
 .container {
@@ -279,7 +275,6 @@ section:not(:first-of-type) {
     inset -5px -5px 10px var(--color-shadow);
 }
 
-
 .modal-btn a {
   width: 100%;
   height: 100%;
@@ -318,6 +313,16 @@ section:not(:first-of-type) {
   background-color: var(--color-white);
   visibility: hidden;
   opacity: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+.modal__content p {
+  line-height: 1.5;
 }
 
 .modal:target,
@@ -331,7 +336,16 @@ section:not(:first-of-type) {
   position: absolute;
   top: 0;
   right: 1rem;
-  text-decoration: none;
+
+  font-size: 2em;
+}
+
+.close:hover {
+  transform: scale(1.1);
+}
+
+.close:active {
+  transform: scale(0.9);
 }
 
 .form {
@@ -409,10 +423,11 @@ label[class$="-form__label"] {
   padding: 5rem;
   border: 2px solid black;
   border-radius: 3rem;
+  background-color: rgba(255, 255, 255, 0.75);
 
   position: fixed;
   top: 50%;
-  right: -40%;
+  left: 100%;
 }
 
 #section5:target .popup {
