@@ -22,7 +22,6 @@ body {
 
 .container {
   animation: color-toggle-to-light .7s ease-in forwards;
-
 }
 
 #switch:checked~.container {
@@ -49,6 +48,7 @@ body {
   font-size: 1.6rem;
   margin: 0 auto;
   position: relative;
+  overflow-x: hidden;
 
   /* animation: .5s fadeIn 1s backwards; */
   /* animation-delay: .2s; */
@@ -76,7 +76,12 @@ body {
   transform: translate(0);
 }
 
-#side-checkbox:checked~.main-body,
+#side-checkbox~.container section[id^="section"],
+#side-checkbox~.menu-button {
+  transform: translateX(0);
+  transition: transform .2s ease-in;
+}
+#side-checkbox:checked~.container section[id^="section"],
 #side-checkbox:checked~.menu-button {
   transform: translateX(var(--width-side-menu));
 }
@@ -139,6 +144,7 @@ body {
   flex-wrap: wrap;
   padding-top: 10rem;
   color: var(--color-text);
+  width: 80%;
 }
 
 input[type="radio"] {
@@ -419,17 +425,18 @@ label[class$="-form__label"] {
 .popup {
   width: 30rem;
   line-height: 2;
-  height: 30rem;
+  height: 20rem;
   padding: 5rem;
   border: 2px solid black;
   border-radius: 3rem;
   background-color: rgba(255, 255, 255, 0.75);
 
-  position: fixed;
-  top: 50%;
-  left: 100%;
+  position: absolute;
+  top: 40%;
+  left: 150%;
+
 }
 
 #section5:target .popup {
-  animation: popup 3s ease-out 1s;
+  animation: popup 5s ease-out 1s forwards;
 }
