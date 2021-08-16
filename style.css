@@ -100,8 +100,8 @@ body {
   height: 3rem;
   width: 3rem;
   position: fixed;
-  top: .7rem;
-  left: 1rem;
+  top: 2%;
+  left: 2%;
   z-index: 11;
   color: var(--color-white);
 }
@@ -140,9 +140,9 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  align-content: flex-start;
+  align-content: center;
   flex-wrap: wrap;
-  padding-top: 10rem;
+
   color: var(--color-text);
   width: 80%;
 }
@@ -203,6 +203,9 @@ input[name="tab__radio"]:checked+label+.tab__box {
   animation: 2s moveIn ease-in backwards;
 }
 
+section {
+  height: 100vh;
+}
 
 section:not(:first-of-type) {
   padding-top: 20rem;
@@ -426,7 +429,7 @@ label[class$="-form__label"] {
   width: 30rem;
   line-height: 2;
   height: 20rem;
-  padding: 5rem;
+  padding: 3rem;
   border: 2px solid black;
   border-radius: 3rem;
   background-color: rgba(255, 255, 255, 0.75);
@@ -434,7 +437,11 @@ label[class$="-form__label"] {
   position: absolute;
   top: 40%;
   left: 150%;
-
+}
+.popup__heading {
+  font-size: 1.5em;
+  font-family: bold;
+  text-align: center;
 }
 
 #section5:target .popup {

@@ -1,5 +1,5 @@
 .header {
-  height: 5rem;
+  height: 7vh;
   width: 100vw;
 
   display: flex;
@@ -16,6 +16,8 @@
 
 #switch:checked~.container .header__heading {
   visibility: hidden;
+  font-size: 1.5em;
+  font-family: bold;
 }
 
 #switch:checked~.container .header__heading::after {
@@ -31,18 +33,21 @@
 .header__heading--char {
   display: inline-block;
   animation: jumpChar 1s ease-in-out;
-
+  font-size: 1.5em;
+  font-family: bold;
 }
 
 
-
 .footer {
-  height: 3rem;
+  height: 5vh;
   width: 100vw;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  font-size: 1.5em;
+  font-family: bold;
 
   background-color: var(--color-primary);
   color: var(--color-white);
@@ -187,7 +192,7 @@
   background-color: var(--color-switch-bg);
   border-radius: 100px;
   position: relative;
-  margin: 1.8rem 0 4rem 0;
+  margin: 15% 0 4rem 0;
   cursor: pointer;
 
 }
