@@ -5,11 +5,21 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  opacity: 0;
-  visibility: hidden;
-  animation: fadeIn 1s ease-in forwards;
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
+
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: currentColor;
+}
+
+
 
 :root {
   /* --color-white: #fff; */
@@ -28,35 +38,39 @@ body {
   animation: color-toggle-to-dark .7s ease-in forwards;
 }
 
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-a:link,
-a:active,
-a:visited {
-  text-decoration: none;
-  color: currentColor;
-}
-
-
-
 body {
   font-size: 1.6rem;
   margin: 0 auto;
   position: relative;
   overflow-x: hidden;
 
+  opacity: 0;
+  visibility: hidden;
+  animation: fadeIn 1s ease-in forwards;
   /* animation: .5s fadeIn 1s backwards; */
   /* animation-delay: .2s; */
 }
 
 .header {
-  position: sticky;
+  height: 7vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
   top: 0;
+  z-index: 10;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.header__heading--char {
+  display: inline-block;
+  animation: jumpChar 1s ease-in-out;
+  font-size: 1.5em;
+  font-family: bold;
 }
 
 #side-checkbox {
@@ -70,7 +84,6 @@ body {
   color: var(--color-white);
   z-index: 100;
 }
-
 
 #side-checkbox:checked~.container .side-bar {
   transform: translate(0);
