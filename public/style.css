@@ -87,9 +87,8 @@ body {
   background-color: var(--color-switch-bg);
   border-radius: 100px;
   position: relative;
-  margin: 15% 0 4rem 0;
+  margin: 3% 0 4rem 0;
   cursor: pointer;
-
 }
 
 .toggle {
