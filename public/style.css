@@ -75,6 +75,13 @@ body {
   right: 10%;
 }
 
+@media (max-width: 400px) {
+  .switch-container {
+    transform: translateY(calc(100vh - 200%));
+  }
+}
+
+
 .dark-light-switch,
 .toggle {
   height: 2.8rem;
