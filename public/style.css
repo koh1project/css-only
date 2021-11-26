@@ -145,7 +145,7 @@ body {
 }
 
 .header {
-  height: 7vh;
+  height: 7rem;
   width: 100vw;
 
   display: flex;
@@ -207,7 +207,7 @@ body {
   height: 3rem;
   width: 3rem;
   position: fixed;
-  top: 2%;
+  top: 2rem;
   left: 2%;
   z-index: 11;
   color: var(--color-white);
