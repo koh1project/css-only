@@ -124,7 +124,7 @@
     --color-tilt-box: #79e4e7;
   }
 
-  50% {
+  /* 50% {
     opacity: 0;
     --color-primary: rgba(0, 0, 0, 0);
 
@@ -151,7 +151,7 @@
     --color-toggle-checked: rgba(0, 0, 0, 0);
 
     --color-tilt-box: rgba(0, 0, 0, 0);
-  }
+  } */
 
   100% {
     opacity: 1;
@@ -217,7 +217,7 @@
     --color-toggle-checked: #34323D;
     --color-tilt-box: #04527b;
   }
-
+/* 
   50% {
     opacity: 0;
     --color-primary: rgba(0, 0, 0, 0);
@@ -245,7 +245,7 @@
     --color-toggle-checked: rgba(0, 0, 0, 0);
     --color-tilt-box: rgba(0, 0, 0, 0);
   }
-
+ */
   100% {
     opacity: 1;
 
