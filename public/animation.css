@@ -81,11 +81,11 @@
   }
 
   10% {
-    transform: translateX(-150%) translateZ(0);
+    transform: translateX(-300%) translateZ(0);
   }
 
   90% {
-    transform: translateX(-150%) translateZ(0);
+    transform: translateX(-300%) translateZ(0);
   }
 
   100% {
