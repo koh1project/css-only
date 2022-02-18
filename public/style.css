@@ -754,6 +754,6 @@ label[class$="-form__label"] {
   color: var(--color-white);
 }
 
-* {
+/* * {
   outline: 1px solid grey;
-}
+} */
