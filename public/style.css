@@ -77,12 +77,6 @@ body {
   /* right: 10%; */
 }
 
-@media (max-width: 400px) {
-  .switch-container {
-    transform: translateY(calc(100vh - 200%));
-  }
-}
-
 .dark-light-switch,
 .toggle {
   height: 2.8rem;
@@ -262,6 +256,7 @@ body {
 
   color: var(--color-text);
   width: 80%;
+  padding-top: calc(var(--height-header) + 10rem);
 }
 
 input[type="radio"] {
@@ -273,9 +268,11 @@ label.tab__label {
   max-width: 20rem;
   width: 15vw;
 
-  padding: 1rem;
-
   order: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 label.tab__label:not(:first-of-type) {
@@ -321,7 +318,8 @@ input[name="tab__radio"]:checked + label + .tab__box {
 }
 
 section {
-  height: 100vh;
+  /* height: 100vh; */
+  height: fit-content;
   width: 80%;
 }
 
@@ -726,7 +724,8 @@ label[class$="-form__label"] {
 
   position: absolute;
   top: 40%;
-  left: 150%;
+  /* left: 150%; */
+  transform: translateX(300vw);
 }
 
 .popup__heading {
@@ -736,7 +735,7 @@ label[class$="-form__label"] {
 }
 
 #section5:target .popup {
-  animation: popup 5s ease-out 1s forwards;
+  animation: popup 10s ease-out 1s forwards;
 }
 
 .footer {
@@ -753,7 +752,26 @@ label[class$="-form__label"] {
   background-color: var(--color-primary);
   color: var(--color-white);
 }
-
-/* * {
+/* 
+* {
   outline: 1px solid grey;
 } */
+
+@media (max-width: 600px) {
+  :root {
+    --width-side-menu: 5rem;
+  }
+  .header {
+    width: 100%;
+  }
+  label.tab__label {
+    font-size: calc(1rem + 1vw);
+  }
+  .card-container {
+    flex-flow: column nowrap;
+    gap: 10rem;
+  }
+  .footer {
+    width: 100%;
+  }
+}
