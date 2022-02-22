@@ -57,9 +57,12 @@ body {
   font-family: bold;
 }
 
+#switch:checked ~ .container .header__heading span {
+  display: none;
+}
+
 #switch:checked ~ .container .header__heading::after {
   /* visibility: visible; */
-  transform: translateY(-50%);
   opacity: 0;
   content: attr(data-text);
   display: block;
@@ -159,7 +162,11 @@ body {
 }
 .header__heading {
   grid-column: 2 / 4;
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .header__heading--char {
