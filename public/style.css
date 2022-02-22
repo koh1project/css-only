@@ -166,13 +166,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: .5rem;
 }
 
 .header__heading--char {
   display: inline-block;
   animation: jumpChar 1s ease-in-out;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-family: bold;
 }
 
