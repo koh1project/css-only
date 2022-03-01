@@ -757,7 +757,6 @@ label[class$="-form__label"] {
   justify-content: center;
   align-items: center;
 
-  font-size: 1.5em;
   font-family: bold;
 
   background-color: var(--color-primary);
@@ -770,7 +769,7 @@ label[class$="-form__label"] {
 
 @media (max-width: 600px) {
   :root {
-    --width-side-menu: 5rem;
+    --width-side-menu: 10rem;
     --color-toggle-checked: rgba(255, 255, 255, 0.829);
   }
   .header {
